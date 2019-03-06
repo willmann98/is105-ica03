@@ -23,7 +23,7 @@ func main() {
 	// write text to be gzipped and push to pipe
 	go func() {
 		fmt.Println("Start writing")
-		n, err := gWriter.Write([]byte("These words will be compressed and push into pipe"))
+		n, err := gWriter.Write([]byte("These words will be compressed and pushed into pipe"))
 
 		fmt.Printf("len = %d\n", n)
 
